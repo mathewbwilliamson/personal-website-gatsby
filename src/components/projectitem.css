@@ -1,0 +1,64 @@
+.post-block {
+  margin: 0;
+  padding: 1em 2em;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+ul li, ol li {
+  padding: 0.25em 0;
+  color: #444;
+}
+ul, ol {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 1em;
+}
+.post-block .post-title {
+  margin: 0;
+}
+.btn, .page-title, .post-title, .list-title, .main-title, .sub-title, .nav-menu li a, .post-header .post-meta {
+  font-family: dosis,"HelveticaNeue-CondensedBold","trebuchet ms",sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+.post-block .post-title a:visited {
+  color: #AAA;
+}
+.post-block .post-title a {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+a {
+  background: transparent;
+}
+.post-block .post-title a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.post-block .right {
+  float: right;
+  width: 3.5em;
+  margin: .25em 0 .25em 1em;
+  height: 100%;
+}
+.photo {
+  overflow: hidden;
+  position: relative;
+  border-radius: 0.25em;
+  height: 100%;
+  max-width: 702px;
+  display: block;
+  background: #444;
+  border: 0.25em solid #444;
+}

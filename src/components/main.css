@@ -89,12 +89,16 @@ div {
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 15vh auto auto 2fr 1fr 1fr;
+  grid-template-rows: 15vh auto auto auto auto auto;
 }
 
 .center {
   grid-column: 1 / span 4;
   justify-self: center;
+}
+.left {
+  grid-column: 2 / span 3;
+  justify-self: start;
 }
 
 .heroContainer {

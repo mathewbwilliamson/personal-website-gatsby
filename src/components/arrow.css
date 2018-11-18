@@ -1,0 +1,19 @@
+.leftSidePointer {
+  height:15vw;
+  max-height: 155px;
+  margin-bottom:2em;
+  width:100%;
+  padding-left: 4%;
+  background: linear-gradient(to top right, #fff calc(50% - 2px), #000, #fff calc(50% + 2px) );
+  grid-column: 1 / span 2;
+  justify-self: end;
+}
+.rightSidePointer {
+  height:15vw;
+  max-height: 155px;
+  margin-bottom:2em;
+  width:100%;
+  padding-right: 4%;
+  background: linear-gradient(to top left, #fff calc(50% - 2px), #000, #fff calc(50% + 2px) );
+  grid-column: 3 / span 2;
+}
