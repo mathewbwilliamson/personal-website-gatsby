@@ -7,7 +7,7 @@ import Hero from '../components/Hero'
 import Arrow from '../components/Arrow'
 import AboutMe from '../components/AboutMe'
 import Projects from '../components/Projects'
-import ContactMe from '../components/ContactMe'
+import WorkWithMe from '../components/WorkWithMe'
 
 const IndexPage = () => (
   <Layout>
@@ -18,7 +18,7 @@ const IndexPage = () => (
       <Arrow />
       <Projects />
       <Arrow />
-      <ContactMe />      
+      <WorkWithMe />      
     </div>
   </Layout>
 )

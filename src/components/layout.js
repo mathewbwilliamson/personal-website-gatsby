@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Navbar from './Navbar'
-import './layout.css'
+// import './layout.css'
 import './main.css'
 
 const Layout = ({ children }) => (
