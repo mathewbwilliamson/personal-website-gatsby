@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat');
+
+.m {
+  color: red;
+}
+
+.w {
+  color: black;
+}
+
+.logo{
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+}
+
+.logo.m {
+  transform: rotate(90deg);
+  text-align: right;
+  line-height: .8;
+  padding: 0;
+  margin: -4px 2px -11px -4px;
+}
