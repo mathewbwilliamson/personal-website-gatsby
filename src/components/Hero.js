@@ -5,7 +5,7 @@ import './main.css'
 const Hero = () => (
   
   <div class='heroContainer center'>
-    <h1>Hi, I'm Matt Williamson</h1>
+    <h1>Hi, I'm <span class='red'>Matt Williamson</span></h1>
   </div>
 
 )

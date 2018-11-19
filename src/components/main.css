@@ -90,7 +90,7 @@ div {
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 18vh 22vh auto 24vh auto auto auto auto;
+  grid-template-rows: 18vh 24vh auto 24vh auto 24vh auto auto;
 }
 
 .center {
@@ -120,14 +120,29 @@ div {
   align-self: center;
 }
 
+.workWithMe {
+  display: flex;
+  flex-direction: column;
+}
+
+.workWithMe > h1 {
+  align-self: center;
+}
+
+h2 {
+  font-size: 1.1em;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+
 @media screen and (max-width: 1065px) {
   .main {
-    grid-template-rows: 40vh auto auto auto auto auto;
+    grid-template-rows: 40vh 24vh auto 24vh auto 24vh auto auto;
   }
 }
 
 @media screen and (max-width: 550px) {
   .main {
-    grid-template-rows: 61vh auto auto auto auto auto;
+    grid-template-rows: 40vh 24vh auto 24vh auto 24vh auto auto;
   }
 }

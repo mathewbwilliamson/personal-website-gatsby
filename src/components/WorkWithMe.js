@@ -4,7 +4,7 @@ import './main.css'
 
 const WorkWithMe = () => (
   <div class='workWithMe center'>
-    <h1>Work With Me</h1>
+    <h1>work with me</h1>
     <section class="workWithMe" id="workWithMeSection">
         <h2>I’d love to hear from you about employment, networking or mentorship opportunities!</h2>
         <p><a href="./documents/Williamson - Web Developer Resume v2.pdf" target='_blank'>Download or view my resume.</a></p>
