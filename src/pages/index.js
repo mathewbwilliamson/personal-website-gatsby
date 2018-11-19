@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import Image from '../components/image'
@@ -24,3 +24,20 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+// export const pageQuery = graphql`
+//   query {
+//     linkedin: file(relativePath: { eq: "images/linkedin.svg" }) {
+//       ...squareImage
+//     }
+//     github: file(relativePath: { eq: "images/github-circle.svg" }) {
+//       ...squareImage
+//     }
+//     email: file(relativePath: { eq: "images/email.svg" }) {
+//       ...squareImage
+//     }
+//     resume: file(relativePath: { eq: "images/file-pdf-box.svg" }) {
+//       ...squareImage
+//     }
+//   }
+// `
