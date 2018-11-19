@@ -58,13 +58,14 @@ body {
 }
 
 p, a {
-  color: #8a8a8a;
-  font-size: 1.20em;
-  line-height: 1.9em;
+  color: #000000;
+  font-size: 1.5rem;
+  line-height: 1.4em;
   font-weight: 400;
   letter-spacing: 0px;
   text-decoration: none;
   font-family: Lato, Helvetica, Arial, sans-serif;
+  margin-bottom: 15px;
 }
 
 h1, h2 {
@@ -89,13 +90,14 @@ div {
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 15vh auto auto auto auto auto;
+  grid-template-rows: 18vh 22vh auto 24vh auto auto auto auto;
 }
 
 .center {
   grid-column: 1 / span 4;
   justify-self: center;
 }
+
 .left {
   grid-column: 2 / span 3;
   justify-self: start;
@@ -103,4 +105,29 @@ div {
 
 .heroContainer {
   grid-column: 1 / span 4;
+}
+
+.red {
+  color: #ff0000;
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutMe > h1 {
+  align-self: center;
+}
+
+@media screen and (max-width: 1065px) {
+  .main {
+    grid-template-rows: 40vh auto auto auto auto auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .main {
+    grid-template-rows: 61vh auto auto auto auto auto;
+  }
 }

@@ -5,7 +5,7 @@ import ProjectItem from './ProjectItem'
 const Projects = () => (
   
   <div class="projects center">
-    <h1>Projects go here</h1>
+    <h1>Recent Projects</h1>
     <ul>
       <ProjectItem />
       <ProjectItem />
