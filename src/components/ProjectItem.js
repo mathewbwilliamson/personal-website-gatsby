@@ -9,7 +9,7 @@ const ProjectItem = (projObject) => (
       <div class="right photo">
         <img src="content/03-projects/01-dresses-and-beer/1.thumb.png" />
       </div>
-      <h3 class="post-title"><a href="/projects/dresses-and-beer">Dresses and Beer</a></h3>
+      <h1 class="post-title"><a href="/projects/dresses-and-beer">This Portfolio</a></h1>
       <p class="post-meta">Branding &amp; Website</p>
     </li>
   </div>
