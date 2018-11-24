@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
+import Navbar from '../components/Navbar'
 import Image from '../components/image'
 import Hero from '../components/Hero'
 import Arrow from '../components/Arrow'
@@ -13,11 +14,11 @@ const IndexPage = () => (
   <Layout>
     <div class='main'>
       <Hero />
-      <Arrow />
+      {/* <Arrow /> */}
       <AboutMe />
-      <Arrow />
+      {/* <Arrow /> */}
       <Projects />
-      <Arrow />
+      {/* <Arrow /> */}
       <WorkWithMe />      
     </div>
   </Layout>
