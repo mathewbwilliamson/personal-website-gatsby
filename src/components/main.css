@@ -77,7 +77,7 @@ h1, h2 {
   font-family: 'Montserrat', sans-serif;
 }
 
-.grey {
+.grey p, .grey h1, .grey h2 {
   color: #444444;
 }
 
@@ -100,7 +100,7 @@ div {
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100vh 24vh auto 24vh auto 24vh auto auto;
+  grid-template-rows: 100vh 1fr 1fr 1fr;
 }
 
 .center {
