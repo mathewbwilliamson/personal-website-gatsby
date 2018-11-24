@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import './main.css'
 
 const WorkWithMe = () => (
-  <div class='workWithMe center'>
+  <div class='workWithMe center offcolor'>
     <h1>work with me</h1>
     <section class="workWithMe" id="workWithMeSection">
         <h2>I’d love to hear from you about employment, networking or mentorship opportunities!</h2>

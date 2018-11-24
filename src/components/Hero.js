@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 
 const Hero = () => (
   <React.Fragment>
-    <div class='heroContainer center'>
+    <div class='heroContainer center mainColor'>
       <Navbar />
       <div class='paralax-background'></div>
       <h1><span class='thin'>Hi, I'm </span>Matt Williamson</h1>

@@ -85,6 +85,10 @@ h1, h2 {
   color: #444444;
 }
 
+.mainColor p, .mainColor h1, .mainColor h2 {
+  color: #ffffff;
+}
+
 .highlight {
   color: #2e95c4;
 }
@@ -174,7 +178,28 @@ div {
   width: 100%;
   z-index: 0;
   height: 100%;
-  
+}
+
+.projects {
+  grid-column: 1 / span 5;
+  /* background: #760fc3; */
+  background-image: linear-gradient(359deg,#26a4c5,#652ec3);
+  width: 100vw;
+  display: grid;
+}
+
+.projects > h1 {
+  grid-column: 1 / span 6;
+  justify-self: center;
+  margin-top: 10vh;
+  margin-bottom: 6vh;
+}
+
+.workWithMe > h1 {
+  grid-column: 1 / span 6;
+  justify-self: center;
+  margin-top: 10vh;
+  margin-bottom: 6vh;
 }
 
 @media screen and (max-width: 1065px) {
