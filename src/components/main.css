@@ -77,8 +77,12 @@ h1, h2 {
   font-family: 'Montserrat', sans-serif;
 }
 
-.grey p, .grey h1, .grey h2 {
+.offcolor p, .offcolor h1, .offcolor h2 {
   color: #444444;
+}
+
+.highlight {
+  color: #2e95c4;
 }
 
 .thin {
