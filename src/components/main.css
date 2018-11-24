@@ -152,7 +152,7 @@ div {
 }
 
 .aboutMe > p {
-  grid-column: 2 / span 5;
+  grid-column: 2 / 3;
 
 }
 
