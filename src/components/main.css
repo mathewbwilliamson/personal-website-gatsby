@@ -123,7 +123,7 @@ div {
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100vh 1fr 1fr 1fr;
+  grid-template-rows: 100vh auto auto auto;
 }
 
 .center {
@@ -200,10 +200,63 @@ div {
 }
 
 .projects > h1 {
-  grid-column: 1 / span 6;
+  grid-column: 1 / span 11;
   justify-self: center;
   margin-top: 10vh;
   margin-bottom: 6vh;
+}
+
+.projects > ul {
+  grid-column: 1 / span 11;
+  justify-self: center;
+}
+
+.card {
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+  max-height: 100%;
+  place-content: center flex-start;
+  align-items: center;
+  width: 70vw;
+  padding: 15px 18px;
+  text-decoration: none;
+  border-radius: 8px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 14px 24px 0 rgba(0,0,0,.33);
+    box-shadow: 0 14px 24px 0 rgba(0,0,0,.33);
+    border: 2px solid #fff;
+  margin: 0 auto;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; 
+  margin-bottom: 9vh;
+}
+
+/* .card::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 9vh;
+  background-color: red;
+  margin: 0 auto;
+} */
+
+.cardImage {
+  border-radius: 18px;
+  max-width: 48px;
+  width: 100%;
+  background-color: red;
+}
+
+.cardTitle > h2 {
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.26;
+  letter-spacing: .2px;
+  color: #616161;
+  font-size: 16px;
+  margin: 0;
 }
 
 .workWithMe > h1 {
@@ -223,7 +276,13 @@ div {
   justify-content: space-evenly;
 }
 
-@media screen and (max-width: 1065px) {
+.heroContainer > h1 {
+  grid-column: 1 / span 6;
+  justify-self: center;
+}
+
+
+/* @media screen and (max-width: 1065px) {
   .main {
     grid-template-rows: 40vh 24vh auto 24vh auto 24vh auto auto;
   }
@@ -233,4 +292,4 @@ div {
   .main {
     grid-template-rows: 40vh 24vh auto 24vh auto 24vh auto auto;
   }
-}
+} */
