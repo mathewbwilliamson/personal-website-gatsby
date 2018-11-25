@@ -11,7 +11,7 @@ const Projects = () => (
       <ProjectItem />
       <ProjectItem />
     </ul>
-    
+    {/* Add a minor ProjectItem later */}
   </div>
 
 )
