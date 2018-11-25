@@ -85,6 +85,17 @@ h1, h2 {
   color: #444444;
 }
 
+.offcolor h1::after {
+  height: 0vh;
+  width: 20vw;
+  content: " ";
+  border-bottom-style: solid;
+  display: block;
+  color: #0dd3c5;
+  margin: 0 auto;
+  border-width: 10px;
+}
+
 .mainColor p, .mainColor h1, .mainColor h2 {
   color: #ffffff;
 }
