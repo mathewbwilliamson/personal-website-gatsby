@@ -5,12 +5,12 @@ import Navbar from './Navbar';
 
 const Hero = () => (
   <React.Fragment>
-    <div class='heroContainer center mainColor'>
+    <div className='heroContainer center mainColor'>
       <Navbar />
-      <div class='paralax-background'></div>
-      <h1><span class='thin'>Hi, I'm </span>Matt Williamson</h1>
+      <div className='paralax-background'></div>
+      <h1><span className='thin'>Hi, I'm </span>Matt Williamson</h1>
       <h2>Web Designer and Programmer</h2>
-      <div class='bottomCurve'></div> 
+      <div className='bottomCurve'></div> 
       {/* Need to figure the bottomCurve out sometime! */}
     </div>
   </React.Fragment>

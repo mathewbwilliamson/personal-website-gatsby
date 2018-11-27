@@ -10,35 +10,55 @@ import AboutMe from '../components/AboutMe'
 import Projects from '../components/Projects'
 import WorkWithMe from '../components/WorkWithMe'
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
     <div class='main'>
       <Hero />
       {/* <Arrow /> */}
       <AboutMe />
       {/* <Arrow /> */}
-      <Projects />
+      <Projects data={data} />
       {/* <Arrow /> */}
-      <WorkWithMe />      
+      <WorkWithMe data={data} />      
     </div>
   </Layout>
 )
 
 export default IndexPage
 
-// export const pageQuery = graphql`
-//   query {
-//     linkedin: file(relativePath: { eq: "images/linkedin.svg" }) {
-//       ...squareImage
-//     }
-//     github: file(relativePath: { eq: "images/github-circle.svg" }) {
-//       ...squareImage
-//     }
-//     email: file(relativePath: { eq: "images/email.svg" }) {
-//       ...squareImage
-//     }
-//     resume: file(relativePath: { eq: "images/file-pdf-box.svg" }) {
-//       ...squareImage
-//     }
-//   }
-// `
+export const screenshot = graphql`
+  fragment screenshot on File {
+    childImageSharp {
+      fluid(maxWidth: 2160) {
+        ...GatsbyImageSharpFluid_tracedSVG
+      }
+    }
+  }
+`
+
+export const icon = graphql`
+  fragment icon on File {
+    childImageSharp {
+      fluid(maxWidth: 48) {
+        ...GatsbyImageSharpFluid_tracedSVG
+      }
+    }
+  }
+`
+
+export const pageQuery = graphql`
+  query {
+    linkedin: file(relativePath: { eq: "images/linkedin.svg" }) {
+      ...screenshot
+    }
+    email: file(relativePath: { eq: "images/email.svg" }) {
+      ...icon
+    }
+    noteful: file(relativePath: { eq: "images/noteful-app-ss.jpg" }) {
+      ...screenshot
+    }
+    github: file(relativePath: { eq: "images/github-circle.svg" }) {
+      ...icon
+    }
+  }
+`
