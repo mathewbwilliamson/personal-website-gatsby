@@ -13,8 +13,8 @@ const WorkWithMe = ({data}) => {
     <section class='icon_container'>
       <a href="https://www.linkedin.com/in/matt-b-williamson/" target='_blank'>
         <section class='icon'>
-          {/* <img height="32" width="32" src="./images/linkedin.svg" /> */}
-          <Img fluid={data.linkedin.childImageSharp.fluid} />
+          <img height="32" width="32" src="./images/linkedin.svg" />
+          {/* <Img fluid={data.linkedin.childImageSharp.fluid} /> */}
         </section>
       </a>
       <a href="https://github.com/mathewbwilliamson" target='_blank'><section class='icon'><img height="32" width="32" src="./images/github-circle.svg" /></section></a>
