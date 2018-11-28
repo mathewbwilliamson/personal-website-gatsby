@@ -6,8 +6,8 @@ import './arrow.css'
 const Hero = () => (
   
   <React.Fragment>
-    <div class='leftSidePointer'></div>
-    <div class='rightSidePointer'></div>
+    <div className='leftSidePointer'></div>
+    <div className='rightSidePointer'></div>
     {/* <img src='..\images\arrow.svg' /> */}
   </React.Fragment>
 )

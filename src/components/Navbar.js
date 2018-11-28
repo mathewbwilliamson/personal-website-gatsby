@@ -7,11 +7,11 @@ const Navbar = () => (
   
   <div className="navBar">
     <p>This is a test!</p>
-      {/* <div class='mwLogo'>
-        <div class='logo m'>
-          <p class='logo m'>W</p>
+      {/* <div className='mwLogo'>
+        <div className='logo m'>
+          <p className='logo m'>W</p>
         </div>
-        <div class='logo w'>W</div>
+        <div className='logo w'>W</div>
       </div> */}
       
     </div>
