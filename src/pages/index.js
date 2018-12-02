@@ -1,14 +1,16 @@
-import React from 'react'
-import { graphql } from 'gatsby'
+import React from 'react';
+import { graphql } from 'gatsby';
 
-import Layout from '../components/layout'
-import Navbar from '../components/Navbar'
-import Image from '../components/image'
-import Hero from '../components/Hero'
-import Arrow from '../components/Arrow'
-import AboutMe from '../components/AboutMe'
-import Projects from '../components/Projects'
-import WorkWithMe from '../components/WorkWithMe'
+import Layout from '../components/layout';
+import Navbar from '../components/Navbar';
+import Image from '../components/image';
+import Hero from '../components/Hero';
+import Arrow from '../components/Arrow';
+import AboutMe from '../components/AboutMe';
+import Projects from '../components/Projects';
+import Skills from '../components/Skills';
+import WorkWithMe from '../components/WorkWithMe';
+
 
 const IndexPage = ({ data }) => {
   console.log('from index', data)
@@ -18,7 +20,9 @@ const IndexPage = ({ data }) => {
       <Hero />
       <AboutMe />
       <Projects data={data} />
-      <WorkWithMe data={data} />      
+      <Skills />
+      <WorkWithMe data={data} />
+       
     </div>
   </Layout>)
 }

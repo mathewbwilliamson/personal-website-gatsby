@@ -31,7 +31,7 @@ ul, ol {
 }
 a {
   text-decoration: none;
-  color: inherit;
+  color: #AAA;
   font-family: inherit;
 }
 a {
@@ -61,4 +61,8 @@ a {
   display: block;
   background: #444;
   border: 0.25em solid #444;
+}
+
+span {
+  font-style: italic;
 }
