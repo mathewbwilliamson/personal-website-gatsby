@@ -11,7 +11,7 @@ const ProjectItem = ({data, projectData}) => {
     <div className='cardTitle'>
       <h2>{projectData.title}</h2>
     </div>
-    <div className='cardImage'>Image goes here
+    <div className='cardImage'>
       <Img fluid={projectData.screenshot} className="portfolio-item-image" />
     </div>
 
