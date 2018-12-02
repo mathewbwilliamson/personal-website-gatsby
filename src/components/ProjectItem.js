@@ -2,6 +2,8 @@ import React from 'react';
 import './main.css';
 // import './projectitem.css';
 import Img from 'gatsby-image';
+import Button from './Button';
+
 
 // https://aliahmad-code.github.io/
 
@@ -22,7 +24,8 @@ const ProjectItem = ({data, projectData}) => {
     <p className='cardUsername'>Username: <span className='italics'>{projectData.demoUsername}</span></p>
     <p className='cardPassword'>Password: <span className='italics'>{projectData.demoPassword}</span></p>
     <a href='' className='cardGithub'>Look at the code on Github</a>
-      
+    <Button buttonText='Check this out'/>
+        
   </div>)
 }
 
