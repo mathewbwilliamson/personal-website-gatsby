@@ -34,14 +34,14 @@ button {
   outline: none;
   line-height: inherit;
 
-user-select: none;
+  user-select: none;
 
-overflow: hidden;
-vertical-align: middle;
-border-radius: 4px;
+  overflow: hidden;
+  vertical-align: middle;
+  border-radius: 4px;
 
   background-color: #6926C3;
-  margin: 16px 32px;
+  margin: 0px 32px 20px 32px;
   padding: 0 16px;
   box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
   transition: box-shadow .28s cubic-bezier(.4,0,.2,1),-webkit-box-shadow .28s cubic-bezier(.4,0,.2,1);
@@ -80,4 +80,8 @@ button:before {
 
 a {
   text-decoration: none;
+}
+
+.btnDiv {
+  margin: 0 auto;
 }

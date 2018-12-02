@@ -3,6 +3,8 @@ import './main.css';
 // import './projectitem.css';
 import Img from 'gatsby-image';
 import Button from './Button';
+import { FaGithub } from 'react-icons/fa';
+import { IconContext } from "react-icons";
 
 
 // https://aliahmad-code.github.io/
@@ -19,12 +21,33 @@ const ProjectItem = ({data, projectData}) => {
 
     <p className='cardNotes'>{projectData.notes}</p>
     <p className='cardBuiltIn'>{projectData.buildNotes}</p>
-    <a href={projectData.demoLink} className='cardTryIt'>Try It Out</a> 
+    <Button buttonLink={projectData.demoLink} buttonText='Try It Out'/>
     {/* Make these into buttons */}
     <p className='cardUsername'>Username: <span className='italics'>{projectData.demoUsername}</span></p>
     <p className='cardPassword'>Password: <span className='italics'>{projectData.demoPassword}</span></p>
-    <a href='' className='cardGithub'>Look at the code on Github</a>
-    <Button buttonText='Check this out'/>
+    <section className='github'>
+      <a href={projectData.clientGithub} target='_blank'>
+        <section className='icon'>
+          <IconContext.Provider value={{ color: 'grey', size: '1em' }}>
+            <div className='iconSection'>
+              <FaGithub />
+              <p>Client</p>
+            </div>
+          </IconContext.Provider>
+        </section>
+      </a>
+      
+      <a href={projectData.serverGithub} target='_blank'>
+        <section className='icon'>
+          <IconContext.Provider value={{ color: 'grey', size: '1em' }}>
+            <div className='iconSection'>
+            < FaGithub />
+              <p>Server</p>
+            </div>
+          </IconContext.Provider>
+        </section>
+      </a>
+    </section>
         
   </div>)
 }
