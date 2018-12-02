@@ -12,7 +12,7 @@ const ProjectItem = ({data, projectData}) => {
       <h2>{projectData.title}</h2>
     </div>
     <div className='cardImage'>Image goes here
-      {/* <Img fluid={projObject.leadlifecycle.childImageSharp} className="portfolio-item-image" /> */}
+      <Img fluid={projectData.screenshot} className="portfolio-item-image" />
     </div>
 
     <p className='cardNotes'>{projectData.notes}</p>

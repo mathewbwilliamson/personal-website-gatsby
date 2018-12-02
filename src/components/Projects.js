@@ -3,12 +3,12 @@ import './main.css'
 import ProjectItem from './ProjectItem'
 
 const Projects = ({data}) => {
-  console.log(data)
+  console.log('data is ', data)
 
   const projectsObj = [
     {
       title: 'Lead Lifecycle Designer',
-      screenshot: '',
+      screenshot: data.leadlifecycle.childImageSharp.fluid,
       notes: 'This web-based app is designed to track leads for a service-oriented business. When a lead is entered, the app will automatically add upcoming "events" to the lead. These events will be automated emails, automated text messages, and reminders to call the lead. The emails will be eventually handled by Send Grid while text messages will be handled by Twillio.',
       buildNotes: 'Built in October 2018 with HTML, CSS, CSS Grid, CSS Flexbox, React, Redux, Node.js, Express, MongoDB',
       demoLink: 'https://mathew-lead-lifecycle-client.netlify.com/',
@@ -19,7 +19,7 @@ const Projects = ({data}) => {
     },
     {
       title: 'Note Storage App',
-      screenshot: '',
+      screenshot: data.noteful.childImageSharp.fluid,
       notes: 'This web-based app was built in order to learn a RESTful back-end, along with a jQuery front end. It allows a user to store notes and information using tags and folders.',
       buildNotes: 'Built in September 2018 with HTML, CSS, jQuery, Node.js, Express, MongoDB',
       demoLink: 'https://matt-noteful-app-v3.herokuapp.com/',
