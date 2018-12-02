@@ -158,12 +158,13 @@ div {
 .aboutMe {
   display: grid;
   grid-template-columns: 1fr 7fr 1fr;
+  padding-bottom: 6vh;
 }
 
 .aboutMe > h1 {
   grid-column: 1 / span 6;
   justify-self: center;
-  margin-top: 10vh;
+  margin-top: 4vh;
   margin-bottom: 6vh;
 }
 
@@ -207,7 +208,7 @@ div {
 .projects > h1 {
   grid-column: 1 / span 11;
   justify-self: center;
-  margin-top: 10vh;
+  margin-top: 4vh;
   margin-bottom: 6vh;
 }
 
@@ -267,7 +268,7 @@ div {
 .workWithMe > h1 {
   grid-column: 1 / span 6;
   justify-self: center;
-  margin-top: 10vh;
+  margin-top: 4vh;
   margin-bottom: 6vh;
 }
 

@@ -6,7 +6,6 @@ import './Navbar.css'
 const Navbar = () => (
   
   <div className="navBar">
-    <p>This is a test!</p>
       {/* <div className='mwLogo'>
         <div className='logo m'>
           <p className='logo m'>W</p>
