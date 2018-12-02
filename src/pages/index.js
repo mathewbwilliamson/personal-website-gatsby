@@ -10,21 +10,20 @@ import AboutMe from '../components/AboutMe'
 import Projects from '../components/Projects'
 import WorkWithMe from '../components/WorkWithMe'
 
-const IndexPage = ({ data }) => (
-  <Layout>
-    <div class='main'>
+const IndexPage = ({ data }) => {
+  console.log('from index', data)
+
+  return (<Layout>
+    <div className='main'>
       <Hero />
-      {/* <Arrow /> */}
       <AboutMe />
-      {/* <Arrow /> */}
       <Projects data={data} />
-      {/* <Arrow /> */}
       <WorkWithMe data={data} />      
     </div>
-  </Layout>
-)
+  </Layout>)
+}
 
-export default IndexPage
+export default IndexPage;
 
 export const screenshot = graphql`
   fragment screenshot on File {
@@ -55,6 +54,9 @@ export const pageQuery = graphql`
       ...icon
     }
     noteful: file(relativePath: { eq: "images/noteful-app-ss.jpg" }) {
+      ...screenshot
+    }
+    leadlifecycle: file(relativePath: { eq: "images/Dashboard.png" }) {
       ...screenshot
     }
     github: file(relativePath: { eq: "images/github-circle.svg" }) {
