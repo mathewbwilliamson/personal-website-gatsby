@@ -11,7 +11,7 @@ const WorkWithMe = ({data}) => {
   return (<div class='workWithMe center offcolor'>
     <h1>work with me</h1>
     <h2>I’d love to hear from you about employment, networking or mentorship opportunities!</h2>
-    <p><a href="./documents/Williamson - Web Developer Resume v2.pdf" target='_blank'>Download or view my resume.</a></p>
+    <p className='work'>Download or view my resume from the links below.</p>
     <p>Send me an email, connect with me on LinkedIn or view my Github.</p>
     <section class='icon_container'>
 
