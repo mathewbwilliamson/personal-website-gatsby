@@ -11,6 +11,7 @@ import { IconContext } from "react-icons";
 
 const ProjectItem = ({data, projectData}) => {
   console.log('Project Object is ', projectData)
+  
   return (<div className='card'>
     <div className='cardTitle'>
       <h2>{projectData.title}</h2>
@@ -21,10 +22,18 @@ const ProjectItem = ({data, projectData}) => {
 
     <p className='cardNotes'>{projectData.notes}</p>
     <p className='cardBuiltIn'>{projectData.buildNotes}</p>
+    
     <Button buttonLink={projectData.demoLink} buttonText='Try It Out'/>
-    {/* Make these into buttons */}
-    <p className='cardUsername'>Username: <span className='italics'>{projectData.demoUsername}</span></p>
-    <p className='cardPassword'>Password: <span className='italics'>{projectData.demoPassword}</span></p>
+    
+    {projectData.demoUsername ? (
+      <React.Fragment>
+        <p className='cardUsername'>Username: <span className='italics'>{projectData.demoUsername}</span></p>
+        <p className='cardPassword'>Password: <span className='italics'>{projectData.demoPassword}</span></p>
+      </React.Fragment>
+    ) : (
+      null
+    )}
+    
     <section className='github'>
       <a href={projectData.clientGithub} target='_blank'>
         <section className='icon'>
@@ -37,7 +46,8 @@ const ProjectItem = ({data, projectData}) => {
         </section>
       </a>
       
-      <a href={projectData.serverGithub} target='_blank'>
+      {projectData.serverGithub ? (
+        <a href={projectData.serverGithub} target='_blank'>
         <section className='icon'>
           <IconContext.Provider value={{ color: 'grey', size: '1em' }}>
             <div className='iconSection'>
@@ -47,6 +57,10 @@ const ProjectItem = ({data, projectData}) => {
           </IconContext.Provider>
         </section>
       </a>
+      ) : (
+        null
+      )}
+      
     </section>
         
   </div>)

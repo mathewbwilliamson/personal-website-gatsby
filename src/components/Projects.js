@@ -23,10 +23,10 @@ const Projects = ({data}) => {
       notes: 'This web-based app was built in order to learn a RESTful back-end, along with a jQuery front end. It allows a user to store notes and information using tags and folders.',
       buildNotes: 'Built in September 2018 with HTML, CSS, jQuery, Node.js, Express, MongoDB',
       demoLink: 'https://matt-noteful-app-v3.herokuapp.com/',
-      demoUsername: '',
-      demoPassword: '',
+      demoUsername: null,
+      demoPassword: null,
       clientGithub: 'https://github.com/mathewbwilliamson/mathew-noteful-app-v3',
-      serverGithub: '',
+      serverGithub: null,
     }
   ];
 
