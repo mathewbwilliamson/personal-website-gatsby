@@ -155,20 +155,20 @@ div {
   color: #ff0000;
 }
 
-.aboutMe {
+.offcolor {
   display: grid;
   grid-template-columns: 1fr 7fr 1fr;
   padding-bottom: 6vh;
 }
 
-.aboutMe > h1 {
+.offcolor > h1 {
   grid-column: 1 / span 6;
   justify-self: center;
   margin-top: 4vh;
   margin-bottom: 6vh;
 }
 
-.aboutMe > p {
+.offcolor > p, h2 {
   grid-column: 2 / 3;
   text-align: justify;
   text-justify: auto;
@@ -197,6 +197,25 @@ div {
 
 .work {
   margin-top: 5vh;
+}
+
+.skills {
+  width: 100vw;
+  grid-template-columns: 1fr 3.5fr 3.5fr 1fr;
+}
+
+.skills h1::after {
+  width: 10vw;
+}
+
+.skills ul:nth-child(2) {
+  text-align: justify;
+  grid-column: 2;
+}
+
+.skills ul:nth-child(3) {
+  text-align: right;
+  grid-column: 3;
 }
 
 .paralax-background {

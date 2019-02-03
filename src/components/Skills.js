@@ -9,7 +9,16 @@ const Skills = ({data}) => {
   console.log(data);
   return (<div className='skills center offcolor'>
     <h1>skills</h1>
-    <h2>I’d love to hear from you about employment, networking or mentorship opportunities!</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript (and ES6)</li>
+      </ul>
+      <ul>
+        <li>jQuery</li>
+        <li>React</li>
+        <li>Redux</li>
+      </ul>
     
   </div>)
 }
