@@ -8,6 +8,7 @@ import Img from 'gatsby-image'
 const Skills = ({data}) => {
   console.log(data);
   return (<div className='skills center offcolor'>
+  {/* Add skills to here, create colored dots or something */}
     <h1>skills</h1>
       <ul>
         <li>HTML</li>

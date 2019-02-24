@@ -66,5 +66,8 @@ export const pageQuery = graphql`
     github: file(relativePath: { eq: "images/github-circle.svg" }) {
       ...icon
     }
+    portfolio: file(relativePath: { eq: "images/portfolioImage.png" }) {
+      ...screenshot
+    }
   }
 `

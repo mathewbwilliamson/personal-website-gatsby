@@ -200,7 +200,7 @@ div {
 }
 
 .skills {
-  width: 100vw;
+  width: 80vw;
   grid-template-columns: 1fr 3.5fr 3.5fr 1fr;
 }
 
@@ -209,7 +209,6 @@ div {
 }
 
 .skills ul:nth-child(2) {
-  text-align: justify;
   grid-column: 2;
 }
 
