@@ -9,7 +9,7 @@ const Hero = () => (
       <Navbar />
       <div className='paralax-background'></div>
       <h1><span className='thin'>Hi, I'm </span>Matt Williamson</h1>
-      <h2>Web Designer and Programmer</h2>
+      <h2>JavaScript Web and App Programmer</h2>
       <div className='bottomCurve'></div> 
       {/* Need to figure the bottomCurve out sometime! */}
     </div>

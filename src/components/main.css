@@ -124,7 +124,7 @@ div {
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100vh auto auto auto;
+  grid-template-rows: 95vh auto auto auto;
 }
 
 .center {
@@ -215,6 +215,9 @@ div {
 .skills ul:nth-child(3) {
   text-align: right;
   grid-column: 3;
+}
+.skills li {
+  line-height: 1.2em;
 }
 
 .paralax-background {
@@ -389,14 +392,69 @@ img {
 }
 
 
-/* @media screen and (max-width: 1065px) {
-  .main {
-    grid-template-rows: 40vh 24vh auto 24vh auto 24vh auto auto;
-  }
-}
-
-@media screen and (max-width: 550px) {
+/* /* @media screen and (max-width: 1065px) {
   .main {
     grid-template-rows: 40vh 24vh auto 24vh auto 24vh auto auto;
   }
 } */
+
+@media screen and (max-width: 550px) {
+  * {
+    text-align: center;
+  }
+  .heroContainer h1 {
+    font-size: 1.0em;
+    padding: 0 20px;
+  }
+
+  .heroContainer h2 {
+    font-size: 0.8em;
+    padding: 20px 20px;
+    text-align: center;
+  }
+
+  .offcolor > p {
+    text-align: center;
+  }
+
+  .center h1 {
+    font-size: 1.1em;
+    padding: 0 20px;
+    /* text-align: center; */
+  }
+  .skills {
+    grid-template-columns: auto;
+    width: unset;
+  }
+  .skills ul:nth-child(3) {
+    grid-column: 2;
+  }
+  .skills li {
+    line-height: 1.2em;
+  }
+
+  .workWithMe h2 {
+    text-align: center;
+    font-size: 0.8em;
+    padding-bottom: 20px;
+  }
+
+  .aboutMe p {
+    /* text-align: center; */
+  }
+
+  .card {
+    grid-template-columns: auto;
+    display: flex;
+  }
+
+  .cardTitle > h2 {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .card .github a:nth-child(2) {
+    padding-left: 40px;
+  }
+
+}

@@ -17,7 +17,7 @@ const ProjectItem = ({data, projectData}) => {
       <h2>{projectData.title}</h2>
     </div>
     <div className='cardImage'>
-      <Img fluid={projectData.screenshot} className="portfolio-item-image" />
+      {projectData.screenshot && <Img fluid={projectData.screenshot} className="portfolio-item-image" />}
     </div>
 
     <p className='cardNotes'>{projectData.notes}</p>

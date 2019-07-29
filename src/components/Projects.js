@@ -19,7 +19,7 @@ const Projects = ({data}) => {
     // },
     {
       title: 'This Personal Portfolio',
-      screenshot: data.portfolio.childImageSharp.fluid, //TODO: Get an image of this
+      // screenshot: data.portfolio.childImageSharp.fluid, //TODO: Get an image of this
       notes: 'This website is built to showcase my skills and my projects. It was built in order to learn Gatsby.js, GraphQL, and other assorted technologies.',
       buildNotes: 'Built in November 2018 with HTML, CSS, CSS Grid, CSS Flexbox, React, Redux, Gatsby.js, and GraphQL',
       demoLink: 'https://',

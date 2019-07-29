@@ -13,16 +13,30 @@ import WorkWithMe from '../components/WorkWithMe';
 
 
 const IndexPage = ({ data }) => {
-  console.log('from index', data)
+  const techStack = [
+    'HTML5',
+    'CSS3',
+    'JavaScript',
+    'React',
+    'Redux',
+    'NodeJS',
+    'Express',
+    'GraphQL',
+    'GatsbyJS',
+    'NextJS',
+    'Python',
+    'MongoDB',
+    'PostgreSQL'
+  ]
+
 
   return (<Layout>
     <div className='main'>
       <Hero />
-      <AboutMe />
+      <AboutMe techStack={techStack} />
       <Projects data={data} />
-      <Skills />
+      <Skills techStack={techStack} />
       <WorkWithMe data={data} />
-       
     </div>
   </Layout>)
 }

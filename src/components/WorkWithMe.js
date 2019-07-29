@@ -11,9 +11,9 @@ const WorkWithMe = ({data}) => {
   return (<div className='workWithMe center'>
     <div className='paralax-background'></div>
     <h1>work with me</h1>
-    <h2>I’d love to hear from you about employment, networking or mentorship opportunities!</h2>
-    <p className='work'>Download or view my resume from the links below.</p>
-    <p>Send me an email, connect with me on LinkedIn or view my Github.</p>
+    <h2>I’d love to hear from you about employment or networking!</h2>
+    {/* <p className='work'>Download or view my resume from the links below.</p> */}
+    <p>Connect with me on LinkedIn, view my Github, or send me an email.</p>
     <section className='icon_container'>
 
       <a href="https://www.linkedin.com/in/matt-b-williamson/" target='_blank'>
@@ -46,7 +46,7 @@ const WorkWithMe = ({data}) => {
         </section>
       </a>
 
-      <a href="./documents/Williamson - Web Developer Resume v2.pdf" target='_blank'>
+      {/* <a href="./documents/Williamson - Web Developer Resume v2.pdf" target='_blank'>
         <section className='icon'>
           <IconContext.Provider value={{ color: 'white', size: '1.5em' }}>
             <div>
@@ -54,7 +54,7 @@ const WorkWithMe = ({data}) => {
             </div>
           </IconContext.Provider>
         </section>
-      </a>
+      </a> */}
 
     </section>
   </div>)
